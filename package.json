@@ -2,7 +2,10 @@
   "name": "portfolio_nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://lautaroromano.github.io/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start"
@@ -16,5 +19,8 @@
     "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
